@@ -44,23 +44,24 @@ You will need:
     Run `Terminal|Bash` with `scp [source] [user]@[server]:[destination]`
 
     ```
-    e.g. scp e.g scp /opt/unix_assignment2.sh pi@13.236.56.5:/home/pi
+    e.g scp /opt/unix_assignment2.sh pi@13.236.56.5:/home/pi
     ```
    
     "/opt/" is the path where you save the script `unix_assigment2.sh`
+    "/home/pi" is the directory where you will save the script in the raspberry pi
 
 2)  Connect to your `raspberry pi`
 
 2a) [Windows]
 
-    Run `PuTTY` and SSH to the server (see `WinSCP` instructions)
+    Run `PuTTY` and SSH to the raspberry pi (see `WinSCP` instructions)
 
 2b) [macOS/Linux]
 
     Run `Terminal/Bash` and enter `ssh [user]@(IP_Address or Host_Name)`
 
     ```
-    e.g.  ssh s3538463@13.236.65.5
+    e.g.  ssh pi@13.236.65.5
 
 3)  Relocate to the directory where you save the script using `cd [script_directory]`
 
@@ -68,12 +69,12 @@ You will need:
     e.g. cd /home/pi
     ```         
     
-4)  Grant permission to the script with command `chmod +x [script_file_name]`
+4)  Grant permission to the script with `chmod +x [script_file_name]`
 
     ```
     e.g chmod +x unix_assignment2.sh
     ```
-5)  Run the script with command `bash [script_file_name]`
+5)  Run the script with `bash [script_file_name]`
   
     ```
     e.g bash unix_assignment2.sh
