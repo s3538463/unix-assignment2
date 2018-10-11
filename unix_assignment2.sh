@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Define function `output_trigger` to list the content of `trigger` file of selected led.
+#Define a function `output_trigger` to list the content of `trigger` file of selected led.
 #This is for task 5
 output_trigger() {
   echo "    "
@@ -11,6 +11,7 @@ output_trigger() {
   echo "---------------------"
 
   task3_counter=1
+
   #Using a re to implement the function that substitute the special character `[` and `]` with `*`. 
   for item in `cat $path/${array_led_info[$selected_led_number]}/trigger|sed -e 's/\[/g/' -e 's/\]/\*/'`;
   do
@@ -20,8 +21,8 @@ output_trigger() {
   echo "$task3_counter)" "Quit to previous menu"
 }
 
-#The function "operate" allows you to operate the selected led.
-#This is for task 3 & 4.
+#The function `operate` allows you to operate the selected led.
+#This is for task 3 & 4
 operate() {
   echo "$led_name"
   echo "================="
