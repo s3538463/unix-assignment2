@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#Define function output_trigger to display the information from the selected led's trigger file.
-#And replace the `[` and `]` with `*` when a string around by `[` and `]`. e.g `[test]` will be converted to `test*`
+#Define function `output_trigger` to list the content of `trigger` file of selected led.
 #This is for task 5
 output_trigger() {
   echo "    "
@@ -12,7 +11,7 @@ output_trigger() {
   echo "---------------------"
 
   task3_counter=1
-  #Define a re to substitute the special character `[` and `]` with `*`
+  #Using a re to implement the function that substitute the special character `[` and `]` with `*`. 
   for item in `cat $path/${array_led_info[$selected_led_number]}/trigger|sed -e 's/\[/g/' -e 's/\]/\*/'`;
   do
     echo "$task3_counter)" "$item";
@@ -21,7 +20,7 @@ output_trigger() {
   echo "$task3_counter)" "Quit to previous menu"
 }
 
-#The function "operate" allows you how to operate the selected led.
+#The function "operate" allows you to operate the selected led.
 #This is for task 3 & 4.
 operate() {
   echo "$led_name"
@@ -57,7 +56,7 @@ operate() {
 esac
 }
 
-#Following code is to read the info from the folder /sys/class/leds then display
+#Following code is to read the info from the folder /sys/class/leds then display every item at each line.
 #This is for task 2
 counter=1
 echo "    "

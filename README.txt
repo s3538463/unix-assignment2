@@ -80,7 +80,8 @@ You will need:
     ```   
 
 #Explanation
-This script is only implemented the basic features.While you run the script `unix_assignment2.sh` you will 
+ 
+  This script is only implemented the basic features.While you run the script `unix_assignment2.sh` you will 
 see the first level menu which will display all the led information. While you select any of them, the second 
 level menu will be displayed and you can `turn on`, `turn off` or list the content of the `trigger` file then 
 exit the script after you are done the operation.However,we can optimize this script in future as needed. 
