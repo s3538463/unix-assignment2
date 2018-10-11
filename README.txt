@@ -61,7 +61,7 @@ You will need:
     Run `Terminal/Bash` and enter `ssh [user]@(IP_Address or Host_Name)`
 
     ```
-    e.g.  ssh pi@13.236.65.5
+    e.g.  ssh pi@13.236.56.5
 
 3)  Relocate to the directory where you save the script using `cd [script_directory]`
 
@@ -85,4 +85,4 @@ You will need:
   This script is only implemented the basic features.While you run the script `unix_assignment2.sh` you will 
 see the first level menu which will display all the led information. While you select any of them, the second 
 level menu will be displayed and you can `turn on`, `turn off` or list the content of the `trigger` file then 
-exit the script after you are done the operation.However,we can optimize this script in future as needed. 
+exit the script after you are done the operation.We can optimize this script in future as needed. 
